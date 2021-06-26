@@ -1,12 +1,13 @@
 # Pumper's website
-## Link
-You can access the link here: https://pumpernickelsguy.github.io/
 
 ## About
-This site contains information for purchasing art commissions from Pumper.
+This Github Pages hosts Pumper's website. Art commission info, pricing info, contact info and sample arts can be found inside.
 
 Please note this is a Work-In-Progress and many features are not yet implemented.
 
+## Link
+You can access the link here: https://pumpernickelsguy.github.io/
+
 ## Contributors
-* Pumpernickelsguy - Owner
-* Wang-yi-yao - Web developer
+* Pumpernickelsguy - Owner and Artist
+* Wang-yi-yao - Web Developer
