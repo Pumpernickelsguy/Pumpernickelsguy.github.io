@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
-<body>
+<body onload="showImage(0)">
     <!--Header-->
     <section class="contentSection" id="header">
         <div id="banner">
@@ -67,21 +67,21 @@
         <!--Example and past arts here-->
         <hr>
         <div id="galleryFrame">
-            <img class="galleryPic" value=1 src="images/gallery/AlphonseComfy.png">
-            <img class="galleryPic" value=2 src="images/gallery/AlphonseCyberpunk.png">
-            <img class="galleryPic" value=3 src="images/gallery/AlphonseCyberpunkClothes.png">
-            <img class="galleryPic" value=4 src="images/gallery/AlphonseSpaceBed.png">
-            <img class="galleryPic" value=5 src="images/gallery/Kitsune.png">
+            <img class="galleryPic" id=1 src="images/gallery/AlphonseComfy.png">
+            <img class="galleryPic" id=2 src="images/gallery/AlphonseCyberpunk.png">
+            <img class="galleryPic" id=3 src="images/gallery/AlphonseCyberpunkClothes.png">
+            <img class="galleryPic" id=4 src="images/gallery/AlphonseSpaceBed.png">
+            <img class="galleryPic" id=5 src="images/gallery/Kitsune.png">
         </div>
         <div id="galleryPick">
             <ul>
-                <li id="back">&lt;&lt;</li>
-                <li>Image 1</li>
-                <li>Image 2</li>
-                <li>Image 3</li>
-                <li>Image 4</li>
-                <li>Image 5</li>
-                <li id="forth">&gt;&gt;</li>
+                <li onclick="showBack()" id="back">&lt;&lt;</li>
+                <li onclick="showImage(1)">Image 1</li>
+                <li onclick="showImage(2)">Image 2</li>
+                <li onclick="showImage(3)">Image 3</li>
+                <li onclick="showImage(4)">Image 4</li>
+                <li onclick="showImage(5)">Image 5</li>
+                <li onclick="showNext()" id="forth">&gt;&gt;</li>
             </ul>
         </div>
         <!-- Important if you are updating this yourself -->
