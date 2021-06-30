@@ -31,6 +31,7 @@
     <!--About-->
     <section class="contentSection" id="about">
         <h1>About Me</h1>
+        <hr>
         <img src="images/profile.png">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -41,41 +42,6 @@
             Cursus vitae congue mauris rhoncus. Magna etiam tempor orci eu. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. 
             Adipiscing elit pellentesque habitant morbi tristique senectus.
         </p>
-        <hr>
-    </section>
-
-    <!--Preview-->
-    <section class="contentSection" id="preview">
-        <h1>Preview</h1>
-        <!--Sample images here-->
-        <div class="imgDiv">
-            <div class="layers" id="sketch"></div>
-            <div class="layers" id="lineart"></div>
-            <div class="layers" id="colourFlat"></div>
-            <div class="layers" id="colourShade"></div>
-            <div class="layers" id="simpleBG"></div>
-            <div class="layers" id="complexBG"></div>
-            <div class="layers" id="blankBG"></div>
-        </div>
-        <div class="selectDiv">
-            <h3>Line art</h3>
-            <label>Sketch</label>
-            <input type="radio" name="line" onclick="updateLine(0)" checked>
-            <label>Outline</label>
-            <input type="radio" name="line" onclick="updateLine(1)">
-
-            <h3>Shading</h3>
-            <label>Flat colour</label>
-            <input type="radio" name="shade" onclick="updateShade(0)" checked>
-            <label>Shaded</label>
-            <input type="radio" name="shade" onclick="updateShade(1)">
-
-            <h3>Background</h3>
-            <label>Simple BG</label>
-            <input type="radio" name="bg" onclick="updateBG(0)" checked>
-            <label>Complex BG</label>
-            <input type="radio" name="bg" onclick="updateBG(1)">
-        </div>
     </section>
 
     <!--Gallery-->
@@ -108,25 +74,55 @@
         <!-- You can add more by adding more <img> tags, don't forget to add a corresponding <li> tag -->
     </section>
 
-    <!--Calculator-->
-    <section class="contentSection" id="calculator">
-        <h1>Calculator</h1>
-        <!--To be Implemented-->
+    <!--Preview-->
+    <section class="contentSection" id="preview">
+        <h1>Sample View</h1>
+        <!--Sample images here-->
         <hr>
-        <div>
-            <h3>Todo</h3>
+        <div class="imgDiv">
+            <div class="layers" id="sketch"></div>
+            <div class="layers" id="lineart"></div>
+            <div class="layers" id="colourFlat"></div>
+            <div class="layers" id="colourShade"></div>
+            <div class="layers" id="simpleBG"></div>
+            <div class="layers" id="complexBG"></div>
+            <div class="layers" id="blankBG"></div>
+        </div>
+        <div class="selectDiv">
+            <h3>How this works</h3>
+            <p>
+                You can customise your commission using the sample view tool to help you get an idea of how the finished picture will look and determine the pricing.
+            </p>
+
+            <h3>Line art</h3>
+            <label>Sketch</label>
+            <input type="radio" name="line" onclick="updateLine(0)" checked>
+            <label>Outline</label>
+            <input type="radio" name="line" onclick="updateLine(1)">
+
+            <h3>Shading</h3>
+            <label>Flat colour</label>
+            <input type="radio" name="shade" onclick="updateShade(0)" checked>
+            <label>Shaded</label>
+            <input type="radio" name="shade" onclick="updateShade(1)">
+
+            <h3>Background</h3>
+            <label>Simple BG</label>
+            <input type="radio" name="bg" onclick="updateBG(0)" checked>
+            <label>Complex BG</label>
+            <input type="radio" name="bg" onclick="updateBG(1)">
         </div>
     </section>
 
     <!--Contact-->
     <section class="contentSection" id="contact">
         <h2>Contact me</h2>
+        <hr>
         <ul>
             <li>Twitter</li>
             <li>Github</li>
             <li>Discord</li>
         </ul>
-        <hr>
     </section>
 
     <!--Copyright-->
