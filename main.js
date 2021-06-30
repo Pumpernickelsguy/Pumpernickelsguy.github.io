@@ -36,3 +36,41 @@ function showBack() {
     }
     showImage(imgNum);
 }
+
+function updatePicType() {
+    
+}
+
+function updateLine(num) {
+    if (num == 0) {
+        document.getElementById("sketch").style.display = "block";
+        document.getElementById("lineart").style.display = "none";
+    } else if (num == 1) {
+        document.getElementById("sketch").style.display = "none";
+        document.getElementById("lineart").style.display = "block";
+    }
+}
+
+function updateShade(num) {
+    if (num == 0) {
+        document.getElementById("colourFlat").style.display = "block";
+        document.getElementById("colourShade").style.display = "none";
+    } else if (num == 1) {
+        document.getElementById("colourFlat").style.display = "none";
+        document.getElementById("colourShade").style.display = "block";
+    }
+}
+
+function updateBG(num) {
+    if (num == 0) {
+        document.getElementById("simpleBG").style.display = "block";
+        document.getElementById("complexBG").style.display = "none";
+    } else if (num == 1) {
+        document.getElementById("simpleBG").style.display = "none";
+        document.getElementById("complexBG").style.display = "block";
+    }
+}
+
+function updateSafe(num) {
+
+}

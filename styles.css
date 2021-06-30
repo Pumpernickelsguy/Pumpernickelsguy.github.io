@@ -15,6 +15,69 @@
 }
 
 .galleryPic {
-    height: 500px;
+    max-height: 500px;
+    width: auto;
+    height: 100%;
     display: none;
+}
+
+/*
+Images layers for preview
+*/
+.imgDiv {
+    overflow: hidden;
+    object-fit: cover;
+    height: 350px;
+}
+
+.layers {
+    background-size: cover;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+#sketch {
+    background-image: url("images/examples/sketch.png");
+    z-index: 3;
+    display: block;
+}
+
+#lineart {
+    background-image: url("images/examples/lineArt.png");
+    z-index: 3;
+    display: none;
+}
+
+#colourFlat {
+    background-image: url("images/examples/colourFlat.png");
+    z-index: 2;
+    display: block;
+}
+
+#colourShade {
+    background-image: url("images/examples/colourShade.png");
+    z-index: 2;
+    display: none;
+}
+
+#complexBG {
+    background-image: url("images/examples/complexBG.png");
+    z-index: 1;
+    display: none;
+}
+
+#simpleBG {
+    background-image: url("images/examples/simpleBG.png");
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+
+#blankBG {
+    background-image: url("images/examples/blankBG.png");
+    position: absolute;
+    z-index: 0;
 }

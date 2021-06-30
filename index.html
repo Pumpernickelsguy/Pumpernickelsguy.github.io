@@ -48,17 +48,34 @@
     <section class="contentSection" id="preview">
         <h1>Preview</h1>
         <!--Sample images here-->
-        <div>
-            <h3>Todo</h3>
+        <div class="imgDiv">
+            <div class="layers" id="sketch"></div>
+            <div class="layers" id="lineart"></div>
+            <div class="layers" id="colourFlat"></div>
+            <div class="layers" id="colourShade"></div>
+            <div class="layers" id="simpleBG"></div>
+            <div class="layers" id="complexBG"></div>
+            <div class="layers" id="blankBG"></div>
         </div>
-        <ul>
-            <li>Sketch</li>
-            <li>Lineart</li>
-            <li>Flat Colour</li>
-            <li>Shaded</li>
-            <li>Simple Background</li>
-            <li>Complex Background</li>
-        </ul>
+        <div class="selectDiv">
+            <h3>Line art</h3>
+            <label>Sketch</label>
+            <input type="radio" name="line" onclick="updateLine(0)" checked>
+            <label>Outline</label>
+            <input type="radio" name="line" onclick="updateLine(1)">
+
+            <h3>Shading</h3>
+            <label>Flat colour</label>
+            <input type="radio" name="shade" onclick="updateShade(0)" checked>
+            <label>Shaded</label>
+            <input type="radio" name="shade" onclick="updateShade(1)">
+
+            <h3>Background</h3>
+            <label>Simple BG</label>
+            <input type="radio" name="bg" onclick="updateBG(0)" checked>
+            <label>Complex BG</label>
+            <input type="radio" name="bg" onclick="updateBG(1)">
+        </div>
     </section>
 
     <!--Gallery-->
