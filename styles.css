@@ -1,13 +1,30 @@
 /*
-Banner styles
+HTML & Body styles
+*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+Navigation styles
 */
 
-#banner {
-    background-image: url("images/icon.png");
+/*
+Header styles
+*/
+.headerSection {
+    width: 100%;
+    margin: auto;
+    padding-top: 400px;
+    padding-bottom: 300px;
+    text-align: center;
+    color: white;
+    background: url("images/bannerTransparent.png"), linear-gradient(#660033, #AE0057);
+    image-rendering: pixelated;
     background-size: contain;
     background-repeat: repeat-x;
-    width: 100%;
-    height: 230px;
+    background-attachment: fixed;
 }
 
 /*
