@@ -20,7 +20,7 @@ Header styles
     padding-bottom: 300px;
     text-align: center;
     color: white;
-    background: url("images/bannerTransparent.png"), linear-gradient(#660033, #AE0057);
+    background: url("images/banner.png"), linear-gradient(#660033, #AE0057);
     image-rendering: pixelated;
     background-size: contain;
     background-repeat: repeat-x;
