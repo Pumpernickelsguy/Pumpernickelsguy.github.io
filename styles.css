@@ -1,9 +1,5 @@
 /*
-.contentSection {
-    margin: auto;
-    width: 100%;
-    padding: 0px 20px;
-}
+Banner styles
 */
 
 #banner {
@@ -48,44 +44,44 @@ Preview styles
 }
 
 #sketch {
-    background-image: url("images/examples/sketch.png");
+    background-image: url("images/portrait/sketch.png");
     z-index: 3;
     display: block;
 }
 
 #lineart {
-    background-image: url("images/examples/lineArt.png");
+    background-image: url("images/portrait/lineArt.png");
     z-index: 3;
     display: none;
 }
 
 #colourFlat {
-    background-image: url("images/examples/colourFlat.png");
+    background-image: url("images/portrait/colourFlat.png");
     z-index: 2;
     display: block;
 }
 
 #colourShade {
-    background-image: url("images/examples/colourShade.png");
+    background-image: url("images/portrait/colourShade.png");
     z-index: 2;
     display: none;
 }
 
 #complexBG {
-    background-image: url("images/examples/complexBG.png");
+    background-image: url("images/portrait/complexBG.png");
     z-index: 1;
     display: none;
 }
 
 #simpleBG {
-    background-image: url("images/examples/simpleBG.png");
+    background-image: url("images/portrait/simpleBG.png");
     position: absolute;
     z-index: 1;
     display: block;
 }
 
 #blankBG {
-    background-image: url("images/examples/blankBG.png");
+    background-image: url("images/portrait/blankBG.png");
     position: absolute;
     z-index: 0;
 }
