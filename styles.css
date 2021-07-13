@@ -19,12 +19,18 @@ Header styles
     padding-top: 400px;
     padding-bottom: 300px;
     text-align: center;
-    color: white;
     background: url("images/banner.png"), linear-gradient(#660033, #AE0057);
     image-rendering: pixelated;
     background-size: contain;
     background-repeat: repeat-x;
     background-attachment: fixed;
+}
+
+.headerText {
+    padding: 15px 25px;
+    color: whitesmoke;
+    background-color: black;
+    display: inline-block;
 }
 
 /*
