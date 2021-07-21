@@ -92,18 +92,43 @@ Preview styles
     float: left;
 }
 
-.selectDiv {
-    float: right;
+#portraitDiv {
+    display: none;
+    width: 400px;
+    height: 900px;
 }
 
-.layers {
+#fullBodyDiv {
+    display: block;
+    width: 400px;
+    height: 900px;
+}
+
+.selectDiv {
+    
+}
+
+.layersPortrait {
     background-size: cover;
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     max-width: 350px;
     max-height: 350px;
 }
+
+.layersFull {
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 795px;
+}
+
+/*
+Layers for headshot preview
+*/
 
 #sketch {
     background-image: url("images/portrait/sketch.png");
@@ -149,8 +174,50 @@ Preview styles
 }
 
 /*
+Layers for full body preview
+*/
+
+#sketchFull {
+    background-image: url("images/fullBody/fullBodysketch.png");
+    z-index: 3;
+    display: block;
+}
+
+#lineartFull {
+    background-image: url("images/fullBody/fullBodyLineArt.png");
+    z-index: 3;
+    display: none;
+}
+
+#colourFlatFull {
+    background-image: url("images/fullBody/fullBodyFlat.png");
+    z-index: 2;
+    display: block;
+}
+
+#colourShadeFull {
+    background-image: url("images/fullBody/fullBodyShade.png");
+    z-index: 2;
+    display: none;
+}
+
+#complexBGFull {
+    background-image: url("images/fullBody/fullBodyComplexBG.png");
+    z-index: 1;
+    display: none;
+}
+
+#simpleBGFull {
+    background-image: url("images/fullBody/fullBodySimpleBG.png");
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+
+/*
 Contact
 */
 #contact {
+    position: initial;
     clear: both;
 }
