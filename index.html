@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
-<body onload="showImage(0)">
+<body onload="showImage(0), changePreview(0)">
     <!--Navigation bar-->
     <ul class="navbar">
         <li class="navbarLi">Back to top</li>
@@ -79,12 +79,14 @@
         <h1>Sample View</h1>
         <!--Sample images here-->
         <hr>
-        <div id="showHeadDiv">
+        <div id="showHeadDiv" onclick="changePreview(0)">
             <h3>Headshot/Bust Preview</h3>
         </div>
-        <div id="showBodyDiv">
+        <div id="showBodyDiv" onclick="changePreview(1)">
             <h3>Full Body Preview</h3>
         </div>
+
+        <!--Elements for portrait preview-->
         <div class="imgDiv" id="portraitDiv">
             <div class="layersPortrait" id="sketch"></div>
             <div class="layersPortrait" id="lineart"></div>
@@ -93,16 +95,7 @@
             <div class="layersPortrait" id="simpleBG"></div>
             <div class="layersPortrait" id="complexBG"></div>
         </div>
-        <div class="imgDiv" id="fullBodyDiv">
-            <div class="layersFull" id="sketchFull"></div>
-            <div class="layersFull" id="lineartFull"></div>
-            <div class="layersFull" id="colourFlatFull"></div>
-            <div class="layersFull" id="colourShadeFull"></div>
-            <div class="layersFull" id="simpleBGFull"></div>
-            <div class="layersFull" id="complexBGFull"></div>
-        </div>
-
-        <div class="selectDiv" id="portraitBodySelect">
+        <div class="selectDiv" id="portraitSelect">
             <h3>How this works</h3>
             <p>
                 You can customise your commission using the sample view tool to help you get an idea of how the finished picture will look and determine the pricing.
@@ -126,6 +119,15 @@
             <input type="radio" name="bg" onclick="updateBG(1)">
         </div>
 
+        <!--Elements for full body preview-->
+        <div class="imgDiv" id="fullBodyDiv">
+            <div class="layersFull" id="sketchFull"></div>
+            <div class="layersFull" id="lineartFull"></div>
+            <div class="layersFull" id="colourFlatFull"></div>
+            <div class="layersFull" id="colourShadeFull"></div>
+            <div class="layersFull" id="simpleBGFull"></div>
+            <div class="layersFull" id="complexBGFull"></div>
+        </div>
         <div class="selectDiv" id="fullBodySelect">
             <h3>How this works</h3>
             <p>

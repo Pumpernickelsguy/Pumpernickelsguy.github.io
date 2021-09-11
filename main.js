@@ -71,6 +71,21 @@ function updateBG(num) {
     }
 }
 
-function updateSafe(num) {
+//Function for changing preview section
+function changePreview(num) {
+    if (num == 0) {
+        //Change to portrait
+        document.getElementById("portraitDiv").style.display = "block";
+        document.getElementById("portraitSelect").style.display = "block";
 
+        document.getElementById("fullBodyDiv").style.display = "none";
+        document.getElementById("fullBodySelect").style.display = "none";
+    } else if (num == 1) {
+        //Change to full body
+        document.getElementById("portraitDiv").style.display = "none";
+        document.getElementById("portraitSelect").style.display = "none";
+
+        document.getElementById("fullBodyDiv").style.display = "block";
+        document.getElementById("fullBodySelect").style.display = "block";
+    }
 }
