@@ -37,10 +37,6 @@ function showBack() {
     showImage(imgNum);
 }
 
-function updatePicType() {
-    
-}
-
 function updateLine(num) {
     if (num == 0) {
         document.getElementById("sketch").style.display = "block";
