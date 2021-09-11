@@ -1,7 +1,7 @@
 var imgNum = 1;
 
 //update the number if you have more images to add. Vice versa if reducing the number of images.
-var max = 5;
+var max = 6;
 
 function showImage(num) {
     imgNum = num;

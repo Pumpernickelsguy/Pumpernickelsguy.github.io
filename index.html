@@ -102,7 +102,31 @@
             <div class="layersFull" id="complexBGFull"></div>
         </div>
 
-        <div class="selectDiv">
+        <div class="selectDiv" id="portraitBodySelect">
+            <h3>How this works</h3>
+            <p>
+                You can customise your commission using the sample view tool to help you get an idea of how the finished picture will look and determine the pricing.
+            </p>
+            <h3>Line art</h3>
+            <label>Sketch</label>
+            <input type="radio" name="line" onclick="updateLine(0)" checked>
+            <label>Outline</label>
+            <input type="radio" name="line" onclick="updateLine(1)">
+
+            <h3>Shading</h3>
+            <label>Flat colour</label>
+            <input type="radio" name="shade" onclick="updateShade(0)" checked>
+            <label>Shaded</label>
+            <input type="radio" name="shade" onclick="updateShade(1)">
+
+            <h3>Background</h3>
+            <label>Simple BG</label>
+            <input type="radio" name="bg" onclick="updateBG(0)" checked>
+            <label>Complex BG</label>
+            <input type="radio" name="bg" onclick="updateBG(1)">
+        </div>
+
+        <div class="selectDiv" id="fullBodySelect">
             <h3>How this works</h3>
             <p>
                 You can customise your commission using the sample view tool to help you get an idea of how the finished picture will look and determine the pricing.
