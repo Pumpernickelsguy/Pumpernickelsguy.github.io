@@ -173,9 +173,8 @@ Layers for headshot preview
 /*
 Layers for full body preview
 */
-
 #sketchFull {
-    background-image: url("images/fullBody/fullBodysketch.png");
+    background-image: url("images/fullBody/fullBodySketch.png");
     z-index: 3;
     display: block;
 }
