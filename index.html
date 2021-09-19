@@ -95,29 +95,6 @@
             <div class="layersPortrait" id="simpleBG"></div>
             <div class="layersPortrait" id="complexBG"></div>
         </div>
-        <div class="selectDiv" id="portraitSelect">
-            <h3>How this works</h3>
-            <p>
-                You can customise your commission using the sample view tool to help you get an idea of how the finished picture will look and determine the pricing.
-            </p>
-            <h3>Line art</h3>
-            <label>Sketch</label>
-            <input type="radio" name="line" onclick="updateLine(0)" checked>
-            <label>Outline</label>
-            <input type="radio" name="line" onclick="updateLine(1)">
-
-            <h3>Shading</h3>
-            <label>Flat colour</label>
-            <input type="radio" name="shade" onclick="updateShade(0)" checked>
-            <label>Shaded</label>
-            <input type="radio" name="shade" onclick="updateShade(1)">
-
-            <h3>Background</h3>
-            <label>Simple BG</label>
-            <input type="radio" name="bg" onclick="updateBG(0)" checked>
-            <label>Complex BG</label>
-            <input type="radio" name="bg" onclick="updateBG(1)">
-        </div>
 
         <!--Elements for full body preview-->
         <div class="imgDiv" id="fullBodyDiv">
@@ -128,7 +105,9 @@
             <div class="layersFull" id="simpleBGFull"></div>
             <div class="layersFull" id="complexBGFull"></div>
         </div>
-        <div class="selectDiv" id="fullBodySelect">
+
+        <!--Controls-->
+        <div class="selectDiv" id="previewSelect">
             <h3>How this works</h3>
             <p>
                 You can customise your commission using the sample view tool to help you get an idea of how the finished picture will look and determine the pricing.

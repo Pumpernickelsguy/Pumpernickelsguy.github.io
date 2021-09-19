@@ -41,9 +41,15 @@ function updateLine(num) {
     if (num == 0) {
         document.getElementById("sketch").style.display = "block";
         document.getElementById("lineart").style.display = "none";
+
+        document.getElementById("sketchFull").style.display = "block";
+        document.getElementById("lineartFull").style.display = "none";
     } else if (num == 1) {
         document.getElementById("sketch").style.display = "none";
         document.getElementById("lineart").style.display = "block";
+
+        document.getElementById("sketchFull").style.display = "none";
+        document.getElementById("lineartFull").style.display = "block";
     }
 }
 
@@ -51,9 +57,15 @@ function updateShade(num) {
     if (num == 0) {
         document.getElementById("colourFlat").style.display = "block";
         document.getElementById("colourShade").style.display = "none";
+
+        document.getElementById("colourFlatFull").style.display = "block";
+        document.getElementById("colourShadeFull").style.display = "none";
     } else if (num == 1) {
         document.getElementById("colourFlat").style.display = "none";
         document.getElementById("colourShade").style.display = "block";
+
+        document.getElementById("colourFlatFull").style.display = "none";
+        document.getElementById("colourShadeFull").style.display = "block";
     }
 }
 
@@ -61,9 +73,15 @@ function updateBG(num) {
     if (num == 0) {
         document.getElementById("simpleBG").style.display = "block";
         document.getElementById("complexBG").style.display = "none";
+
+        document.getElementById("simpleBGFull").style.display = "block";
+        document.getElementById("complexBGFull").style.display = "none";
     } else if (num == 1) {
         document.getElementById("simpleBG").style.display = "none";
         document.getElementById("complexBG").style.display = "block";
+
+        document.getElementById("simpleBGFull").style.display = "none";
+        document.getElementById("complexBGFull").style.display = "block";
     }
 }
 
@@ -72,17 +90,11 @@ function changePreview(num) {
     if (num == 0) {
         //Change to portrait
         document.getElementById("portraitDiv").style.display = "block";
-        document.getElementById("portraitSelect").style.display = "block";
-
         document.getElementById("fullBodyDiv").style.display = "none";
-        document.getElementById("fullBodySelect").style.display = "none";
     } else if (num == 1) {
         //Change to full body
         document.getElementById("portraitDiv").style.display = "none";
-        document.getElementById("portraitSelect").style.display = "none";
-
         document.getElementById("fullBodyDiv").style.display = "block";
-        document.getElementById("fullBodySelect").style.display = "block";
     }
 }
 
