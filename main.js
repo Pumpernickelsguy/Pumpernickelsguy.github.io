@@ -1,8 +1,10 @@
+//initial image to be displayed in gallery
 var imgNum = 1;
 
 //update the number if you have more images to add. Vice versa if reducing the number of images.
 var max = 6;
 
+//function to show image
 function showImage(num) {
     imgNum = num;
 
@@ -21,6 +23,7 @@ function showImage(num) {
     });
 }
 
+//function to go to next gallery image
 function showNext() {
     imgNum += 1;
     if (imgNum == max+1) {
@@ -29,6 +32,7 @@ function showNext() {
     showImage(imgNum);
 }
 
+//function to go to previous gallery image
 function showBack() {
     imgNum -= 1;
     if (imgNum == 0) {
@@ -37,6 +41,7 @@ function showBack() {
     showImage(imgNum);
 }
 
+//update lineart in preview
 function updateLine(num) {
     if (num == 0) {
         document.getElementById("sketch").style.display = "block";
@@ -53,6 +58,7 @@ function updateLine(num) {
     }
 }
 
+//update shading in preview
 function updateShade(num) {
     if (num == 0) {
         document.getElementById("colourFlat").style.display = "block";
@@ -69,6 +75,7 @@ function updateShade(num) {
     }
 }
 
+//update background in preview
 function updateBG(num) {
     if (num == 0) {
         document.getElementById("simpleBG").style.display = "block";
