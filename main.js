@@ -85,3 +85,8 @@ function changePreview(num) {
         document.getElementById("fullBodySelect").style.display = "block";
     }
 }
+
+//function for jumping to a section
+function scrollToSection(idName) {
+    document.getElementById(idName).scrollIntoView();
+}
