@@ -211,9 +211,16 @@ Layers for full body preview
 }
 
 /*
+
+*/
+#estimatedPrice {
+    display: none;
+}
+
+/*
 Contact
 */
-#contact {
+#calculator {
     position: initial;
     clear: both;
 }

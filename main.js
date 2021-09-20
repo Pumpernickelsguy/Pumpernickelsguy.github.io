@@ -4,6 +4,10 @@ var imgNum = 1;
 //update the number if you have more images to add. Vice versa if reducing the number of images.
 var max = 6;
 
+//price numbers
+var portraitPrice = 0;
+var fullBodyPrice = 0;
+
 //function to show image
 function showImage(num) {
     imgNum = num;
@@ -98,14 +102,25 @@ function changePreview(num) {
         //Change to portrait
         document.getElementById("portraitDiv").style.display = "block";
         document.getElementById("fullBodyDiv").style.display = "none";
+
+        document.getElementById("fullBodyPrice").style.display = "none";
+        document.getElementById("portraitPrice").style.display = "block";
     } else if (num == 1) {
         //Change to full body
         document.getElementById("portraitDiv").style.display = "none";
         document.getElementById("fullBodyDiv").style.display = "block";
+
+        document.getElementById("fullBodyPrice").style.display = "block";
+        document.getElementById("portraitPrice").style.display = "none";
     }
 }
 
 //function for jumping to a section
 function scrollToSection(idName) {
     document.getElementById(idName).scrollIntoView();
+}
+
+//function for calculating prices
+function calculatePrice() {
+    //todo
 }

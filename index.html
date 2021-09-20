@@ -110,7 +110,7 @@
         <div class="selectDiv" id="previewSelect">
             <h3>How this works</h3>
             <p>
-                You can customise your commission using the sample view tool to help you get an idea of how the finished picture will look and determine the pricing.
+                You can customise your commission using the preview to help you get an idea of how the finished picture will look.
             </p>
             <h3>Line art</h3>
             <label>Sketch</label>
@@ -130,16 +130,59 @@
             <label>Complex BG</label>
             <input type="radio" name="bg" onclick="updateBG(1)">
         </div>
+    </section>
 
-        <div id="portraitPrice">
-            <h3>Estimated Price</h3>
-            <p>Your estimated price is:<span id="estimatedPrice">0</span></p>
+    <!--Calculator-->
+    <section class="contentSection" id="calculator">
+        <h1>Calculator</h1>
+        <hr>
+        <h3>Base Prices</h3>
+        <label>Commission type</label>
+        <select name="basePrice" id="basePrice">
+            <option value=10>$10 - Bust/Portrait</option>
+            <option value=15>$15 - Half Body</option>
+            <option value=20>$20 - Full Body</option>
+            <option value=25>$25 - Ref Sheet</option>
+        </select>
+        <h3>Style Options</h3>
+        <label>Line Options</label>
+        <select name="lineStyle" id="lineStyle">
+            <option value=0>Free - Sketch</option>
+            <option value=10>$10 - Clean Lines</option>
+        </select>
+        <br><br>
+        <label>Colour Options</label>
+        <select name="colourStyle" id="colourStyle">
+            <option value=0>Free - None</option>
+            <option value=10>$10 - Flat Colour</option>
+            <option value=20>$20 - Rendered Colour</option>
+        </select>
+        <br><br>
+        <label>Background Styles</label>
+        <select name="bgStyle" id="bgStyle">
+            <option value=0>Free - Simple Background</option>
+            <option value=25>$25 - Complex Background</option>
+        </select>
+        <br><br>
+        <label>Is this commission <span style="color:green;">safe</span> for work?</label>
+        <select name="bgStyle" id="bgStyle">
+            <option value=0>Yes</option>
+            <option value=25>No - A $5 fee will be charged</option>
+        </select>
+        <br><br>
+        <input type="button" value="Calculate" onclick="">
+        <br>
+        <p>Please contact me if you have additional characters.</p>
+        <div id="estimatedPrice">
+            <p>Your estimated price is: <span id="priceSpan">Pending...</span></p>
         </div>
+    </section>
 
-        <div id="fullBodyPrice">
-            <h3>Estimated Price</h3>
-            <p>Your estimated price is:<span id="estimatedPrice">0</span></p>
-        </div>
+    <!--Terms of Service-->
+    <section class="contentSection" id="terms">
+        <h2>Terms of Service</h2>
+        <hr>
+        <p>TBD</p>
     </section>
 
     <!--Contact-->
