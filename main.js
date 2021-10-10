@@ -102,16 +102,10 @@ function changePreview(num) {
         //Change to portrait
         document.getElementById("portraitDiv").style.display = "block";
         document.getElementById("fullBodyDiv").style.display = "none";
-
-        document.getElementById("fullBodyPrice").style.display = "none";
-        document.getElementById("portraitPrice").style.display = "block";
     } else if (num == 1) {
         //Change to full body
         document.getElementById("portraitDiv").style.display = "none";
         document.getElementById("fullBodyDiv").style.display = "block";
-
-        document.getElementById("fullBodyPrice").style.display = "block";
-        document.getElementById("portraitPrice").style.display = "none";
     }
 }
 
@@ -122,5 +116,14 @@ function scrollToSection(idName) {
 
 //function for calculating prices
 function calculatePrice() {
-    //todo
+    var total = 0;
+    total += parseInt(document.getElementById("basePrice").value);
+    total += parseInt(document.getElementById("lineStyle").value);
+    total += parseInt(document.getElementById("colourStyle").value);
+    total += parseInt(document.getElementById("bgStyle").value);
+    total += parseInt(document.getElementById("safeOption").value);
+
+    console.log("total price is: " + total);
+    document.getElementById("estimatedPrice").style.display = "block";
+    document.getElementById("priceSpan").innerHTML = total;
 }
