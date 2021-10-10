@@ -2,10 +2,15 @@
 HTML & Body styles
 */
 html, body {
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
     scroll-behavior: smooth;
+}
+
+.contentSection {
+    margin: auto;
+    width: 60%;
 }
 
 /*
@@ -96,7 +101,7 @@ Preview styles
 #portraitDiv {
     display: none;
     width: 400px;
-    height: 900px;
+    height: 450px;
 }
 
 #fullBodyDiv {
@@ -126,7 +131,6 @@ Preview styles
 /*
 Layers for headshot preview
 */
-
 #sketch {
     background-image: url("images/portrait/sketch.png");
     z-index: 3;
@@ -211,7 +215,7 @@ Layers for full body preview
 }
 
 /*
-
+Calculator
 */
 #estimatedPrice {
     display: none;
@@ -223,4 +227,13 @@ Contact
 #calculator {
     position: initial;
     clear: both;
+}
+
+/*
+footer
+*/
+footer {
+    margin: auto;
+    width: 60%;
+    text-align: center;
 }
