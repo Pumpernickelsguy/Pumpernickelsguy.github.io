@@ -50,6 +50,12 @@ Navigation styles
     padding: 10px 20px;
 }
 
+.navbarLi:hover {
+    color: whitesmoke;
+    background-color: darkblue;
+    cursor: pointer;
+}
+
 /*
 Header styles
 */
@@ -66,7 +72,7 @@ Header styles
     padding-top: 125px;
     padding-bottom: 100px;
     text-align: center;
-    background: url("images/banner.png"), linear-gradient(#660033, #AE0057);
+    background: url("images/banner.png"), linear-gradient(darkblue, steelblue);
     image-rendering: pixelated;
     background-size: contain;
     background-repeat: repeat-x;
