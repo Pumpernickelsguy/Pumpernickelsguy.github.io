@@ -58,14 +58,14 @@
         </div>
         <div id="galleryPick">
             <ul id="galleryBar">
-                <li class="galleryLi" onclick="showBack()" id="back">&lt;&lt;</li>
-                <li class="galleryLi" onclick="showImage(1)">Image 1</li>
-                <li class="galleryLi" onclick="showImage(2)">Image 2</li>
-                <li class="galleryLi" onclick="showImage(3)">Image 3</li>
-                <li class="galleryLi" onclick="showImage(4)">Image 4</li>
-                <li class="galleryLi" onclick="showImage(5)">Image 5</li>
-                <li class="galleryLi" onclick="showImage(6)">Image 6</li>
-                <li class="galleryLi" onclick="showNext()" id="forth">&gt;&gt;</li>
+                <li class="galleryLi"><button type="button" onclick="showBack()">&lt;&lt;</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(1)">1</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(2)">2</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(3)">3</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(4)">4</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(5)">5</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(6)">6</button></li>
+                <li class="galleryLi"><button type="button" onclick="showNext()">&gt;&gt;</button></li>
             </ul>
         </div>
         <!-- Important if you are updating this yourself -->
@@ -80,12 +80,6 @@
         <h1>Sample View</h1>
         <!--Sample images here-->
         <hr>
-        <div id="showHeadDiv" onclick="changePreview(0)">
-            <h3>Headshot/Bust Preview</h3>
-        </div>
-        <div id="showBodyDiv" onclick="changePreview(1)">
-            <h3>Full Body Preview</h3>
-        </div>
 
         <!--Elements for portrait preview-->
         <div class="imgDiv" id="portraitDiv">
@@ -109,6 +103,8 @@
 
         <!--Controls-->
         <div class="selectDiv" id="previewSelect">
+            <button type="button" id="showHead" onclick="changePreview(0)">Show Headshot/Bust Preview</button>
+            <button type="button" id="showBody" onclick="changePreview(1)">Show Full body Preview</button>
             <h3>How this works</h3>
             <p>
                 You can customise your commission using the preview to help you get an idea of how the finished picture will look.
@@ -168,10 +164,10 @@
         <label>Is this commission <span style="color:green;">safe</span> for work?</label>
         <select name="safeOption" id="safeOption">
             <option value=0>Yes</option>
-            <option value=25>No - A $5 fee will be charged</option>
+            <option value=5>No - A $5 fee will be charged</option>
         </select>
         <br><br>
-        <input type="button" value="Calculate" onclick="calculatePrice()">
+        <button type="button" onclick="calculatePrice()">Calculate</button>
         <br>
         <p>Please contact me if you have additional characters.</p>
         <div id="estimatedPrice">
@@ -180,21 +176,23 @@
     </section>
 
     <!--Terms of Service-->
+    <!-- not used at the moment
     <section class="contentSection" id="terms">
         <h2>Terms of Service</h2>
         <hr>
         <p>TBD</p>
     </section>
+    -->
 
     <!--Contact-->
     <section class="contentSection" id="contact">
         <h2>Contact me</h2>
         <hr>
         <ul>
-            <li>Email</li>
-            <li>Twitter</li>
-            <li>Github</li>
-            <li>Discord</li>
+            <a href="mailto:"><li>Email</li></a>
+            <a href="https://twitter.com/Pumpernixel"><li>Twitter</li></a>
+            <a href="https://pumpernickelsguy.github.io/"><li>Github</li></a>
+            <abbr title="Pumper#7830"><li>Discord</li></abbr>
         </ul>
     </section>
 

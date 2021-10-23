@@ -13,6 +13,22 @@ html, body {
     width: 60%;
 }
 
+ul {
+    padding-inline-start: 0px;
+}
+
+button {
+    font-size: 30px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
 /*
 Navigation styles
 */
@@ -26,6 +42,7 @@ Navigation styles
     width: 100%;
     background-color: whitesmoke;
     justify-content: center;
+    z-index: 4;
 }
 
 .navbarLi {
@@ -95,6 +112,9 @@ Gallery styles
 
 .galleryLi {
     display: inline;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*

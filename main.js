@@ -21,8 +21,10 @@ function showImage(num) {
     arr.forEach(element => {
         if (element.id == imgNum) {
             element.style.display = "block";
+        
         } else {
             element.style.display = "none";
+        
         }
     });
 }
@@ -102,10 +104,16 @@ function changePreview(num) {
         //Change to portrait
         document.getElementById("portraitDiv").style.display = "block";
         document.getElementById("fullBodyDiv").style.display = "none";
+
+        document.getElementById("showHead").style.display = "none";
+        document.getElementById("showBody").style.display = "block";
     } else if (num == 1) {
         //Change to full body
         document.getElementById("portraitDiv").style.display = "none";
         document.getElementById("fullBodyDiv").style.display = "block";
+
+        document.getElementById("showHead").style.display = "block";
+        document.getElementById("showBody").style.display = "none";
     }
 }
 
