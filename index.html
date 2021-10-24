@@ -49,22 +49,22 @@
         <!--Example and past arts here-->
         <hr>
         <div id="galleryFrame">
-            <img class="galleryPic" id=1 src="images/gallery/AlphonseComfy.png">
-            <img class="galleryPic" id=2 src="images/gallery/AlphonseCyberpunk.png">
-            <img class="galleryPic" id=3 src="images/gallery/AlphonseCyberpunkClothes.png">
-            <img class="galleryPic" id=4 src="images/gallery/AlphonseSpaceBed.png">
-            <img class="galleryPic" id=5 src="images/gallery/Kitsune.png">
-            <img class="galleryPic" id=6 src="images/gallery/Ronin.png"> 
+            <img class="galleryPic" alt="image1" id=1 src="images/gallery/AlphonseComfy.png">
+            <img class="galleryPic" alt="image2" id=2 src="images/gallery/AlphonseCyberpunk.png">
+            <img class="galleryPic" alt="image3" id=3 src="images/gallery/AlphonseCyberpunkClothes.png">
+            <img class="galleryPic" alt="image4" id=4 src="images/gallery/AlphonseSpaceBed.png">
+            <img class="galleryPic" alt="image5" id=5 src="images/gallery/Kitsune.png">
+            <img class="galleryPic" alt="image6" id=6 src="images/gallery/Ronin.png"> 
         </div>
         <div id="galleryPick">
             <ul id="galleryBar">
                 <li class="galleryLi"><button type="button" onclick="showBack()">&lt;&lt;</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(1)">1</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(2)">2</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(3)">3</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(4)">4</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(5)">5</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(6)">6</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(1)" id=1>1</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(2)" id=2>2</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(3)" id=3>3</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(4)" id=4>4</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(5)" id=5>5</button></li>
+                <li class="galleryLi"><button type="button" onclick="showImage(6)" id=6>6</button></li>
                 <li class="galleryLi"><button type="button" onclick="showNext()">&gt;&gt;</button></li>
             </ul>
         </div>
@@ -103,7 +103,7 @@
 
         <!--Controls-->
         <div class="selectDiv" id="previewSelect">
-            <button type="button" id="showHead" onclick="changePreview(0)">Show Headshot/Bust Preview</button>
+            <button type="button" id="showHead" onclick="changePreview(0)">Show Bust Preview</button>
             <button type="button" id="showBody" onclick="changePreview(1)">Show Full body Preview</button>
             <h3>How this works</h3>
             <p>

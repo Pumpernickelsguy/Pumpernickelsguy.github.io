@@ -21,10 +21,9 @@ function showImage(num) {
     arr.forEach(element => {
         if (element.id == imgNum) {
             element.style.display = "block";
-        
+            console.log(document.getElementById(imgNum));
         } else {
             element.style.display = "none";
-        
         }
     });
 }
