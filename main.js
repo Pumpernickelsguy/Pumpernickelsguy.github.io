@@ -21,7 +21,7 @@ function showImage(num) {
     arr.forEach(element => {
         if (element.id == imgNum) {
             element.style.display = "block";
-            console.log(document.getElementById(imgNum));
+            document.getElementById("imageNumber").innerHTML = imgNum;
         } else {
             element.style.display = "none";
         }
