@@ -44,36 +44,38 @@
     </section>
 
     <!--Gallery-->
-    <section class="contentSection" id="gallery">
-        <h1>Gallery</h1>
-        <!--Example and past arts here-->
-        <hr>
-        <div id="galleryFrame">
-            <img class="galleryPic" alt="image1" id=1 src="images/gallery/AlphonseComfy.png">
-            <img class="galleryPic" alt="image2" id=2 src="images/gallery/AlphonseCyberpunk.png">
-            <img class="galleryPic" alt="image3" id=3 src="images/gallery/AlphonseCyberpunkClothes.png">
-            <img class="galleryPic" alt="image4" id=4 src="images/gallery/AlphonseSpaceBed.png">
-            <img class="galleryPic" alt="image5" id=5 src="images/gallery/Kitsune.png">
-            <img class="galleryPic" alt="image6" id=6 src="images/gallery/Ronin.png"> 
-            <center><p>Showing image <span id="imageNumber">num</span></p></center>
-        </div>
-        <div id="galleryPick">
-            <ul id="galleryBar">
-                <li class="galleryLi"><button type="button" onclick="showBack()">&lt;&lt;</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(1)" id=1>1</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(2)" id=2>2</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(3)" id=3>3</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(4)" id=4>4</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(5)" id=5>5</button></li>
-                <li class="galleryLi"><button type="button" onclick="showImage(6)" id=6>6</button></li>
-                <li class="galleryLi"><button type="button" onclick="showNext()">&gt;&gt;</button></li>
-            </ul>
-        </div>
-        <!-- Important if you are updating this yourself -->
-        <!-- <img> tag can display an image using the src (source) attribute -->
-        <!-- Simply assign the src attribute with the filepath of the image -->
-        <!-- In this case, images folder -> gallery folder -> image file + extension -->
-        <!-- You can add more by adding more <img> tags, don't forget to add a corresponding <li> tag -->
+    <section class="alternateColour">
+        <section class="contentSection" id="gallery">
+            <h1>Gallery</h1>
+            <!--Example and past arts here-->
+            <hr>
+            <div id="galleryFrame">
+                <img class="galleryPic" alt="image1" id=1 src="images/gallery/AlphonseComfy.png">
+                <img class="galleryPic" alt="image2" id=2 src="images/gallery/AlphonseCyberpunk.png">
+                <img class="galleryPic" alt="image3" id=3 src="images/gallery/AlphonseCyberpunkClothes.png">
+                <img class="galleryPic" alt="image4" id=4 src="images/gallery/AlphonseSpaceBed.png">
+                <img class="galleryPic" alt="image5" id=5 src="images/gallery/Kitsune.png">
+                <img class="galleryPic" alt="image6" id=6 src="images/gallery/Ronin.png"> 
+                <center><p>Showing image <span id="imageNumber">num</span></p></center>
+            </div>
+            <div id="galleryPick">
+                <ul id="galleryBar">
+                    <li class="galleryLi"><button type="button" onclick="showBack()">&lt;&lt;</button></li>
+                    <li class="galleryLi"><button type="button" onclick="showImage(1)" id=1>1</button></li>
+                    <li class="galleryLi"><button type="button" onclick="showImage(2)" id=2>2</button></li>
+                    <li class="galleryLi"><button type="button" onclick="showImage(3)" id=3>3</button></li>
+                    <li class="galleryLi"><button type="button" onclick="showImage(4)" id=4>4</button></li>
+                    <li class="galleryLi"><button type="button" onclick="showImage(5)" id=5>5</button></li>
+                    <li class="galleryLi"><button type="button" onclick="showImage(6)" id=6>6</button></li>
+                    <li class="galleryLi"><button type="button" onclick="showNext()">&gt;&gt;</button></li>
+                </ul>
+            </div>
+            <!-- Important if you are updating this yourself -->
+            <!-- <img> tag can display an image using the src (source) attribute -->
+            <!-- Simply assign the src attribute with the filepath of the image -->
+            <!-- In this case, images folder -> gallery folder -> image file + extension -->
+            <!-- You can add more by adding more <img> tags, don't forget to add a corresponding <li> tag -->
+        </section>
     </section>
 
     <!--Preview-->
@@ -127,8 +129,8 @@
             <input type="radio" name="bg" onclick="updateBG(1)">
             <br>
             <br>
-            <button type="button" id="showHead" onclick="changePreview(0)">Show Bust Preview</button>
-            <button type="button" id="showBody" onclick="changePreview(1)">Show Full body Preview</button>
+            <button type="button" class="whiteBgButton" id="showHead" onclick="changePreview(0)">Show Bust Preview</button>
+            <button type="button" class="whiteBgButton" id="showBody" onclick="changePreview(1)">Show Full body Preview</button>
         </div>
     </section>
 
@@ -170,13 +172,14 @@
             <option value=5>No - A $5 fee will be charged</option>
         </select>
         <br><br>
-        <button type="button" onclick="calculatePrice()">Calculate</button>
+        <button type="button" class="whiteBgButton" onclick="calculatePrice()">Calculate</button>
         <br>
         <p>Please contact me if you have additional characters.</p>
         <div id="estimatedPrice">
             <p>Your estimated price is: $<span id="priceSpan">Undefined (Something went wrong, please contact the web designer)</span></p>
         </div>
     </section>
+    
 
     <!--Terms of Service-->
     <!-- not used at the moment
@@ -192,7 +195,7 @@
         <h2>Contact me</h2>
         <hr>
         <ul>
-            <a href="mailto:"><li>Email</li></a>
+            <a href="mailto:pumpernickelsguyart@gmail.com"><li>Email</li></a>
             <a href="https://twitter.com/Pumpernixel"><li>Twitter</li></a>
             <a href="https://github.com/Pumpernickelsguy"><li>Github</li></a>
             <abbr title="Pumper#7830"><li>Discord</li></abbr>
@@ -200,12 +203,14 @@
     </section>
 
     <!--Copyright-->
-    <footer>
-        <p>
-            Copyright &copy; Pumpernickelsguy and Frigadae (Wang Yi Yao) 2021<br>
-            Art by Pumpernickelsguy and Web design by Frigadae<br>
-            All rights reserved.
-        </p>
-    </footer>
+    <section class="alternateColour">
+        <footer>
+            <p>
+                Copyright &copy; Pumpernickelsguy and Frigadae (Wang Yi Yao) 2021<br>
+                Art by Pumpernickelsguy and Web design by Frigadae<br>
+                All rights reserved.
+            </p>
+        </footer>
+    </section>
 </body>
 </html>

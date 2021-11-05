@@ -8,6 +8,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+:-webkit-any(article, aside, nav, section) h1 {
+    font-size: 1.5em;
+}
+
 .contentSection {
     margin: auto;
     width: 60%;
@@ -21,12 +25,25 @@ button {
     font-size: 30px;
     border: 0px;
     border-radius: 5px;
-    background-color: rgb(239, 239, 239);
+    background-color: aliceblue;
+
+}
+
+.whiteBgButton {
+    background-color: steelblue;
+    color: whitesmoke;
 }
 
 button:hover {
     cursor: pointer;
     background-color: darkblue;
+    color: whitesmoke;
+}
+
+.alternateColour {
+    background-color: steelblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: whitesmoke;
 }
 
