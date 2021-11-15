@@ -20,6 +20,7 @@
         <li class="navbarLi" onclick="scrollToSection('gallery')">Gallery</li>
         <li class="navbarLi" onclick="scrollToSection('preview')">Preview</li>
         <li class="navbarLi" onclick="scrollToSection('calculator')">Calculator</li>
+        <li class="navbarLi" onclick="scrollToSection('terms')">Terms & Conditions</li>
         <li class="navbarLi" onclick="scrollToSection('contact')">Contact</li>
     </ul>
 
@@ -103,10 +104,7 @@
 
         <!--Controls-->
         <div class="selectDiv" id="previewSelect">
-            <h3>How this works</h3>
-            <p>
-                You can customise your commission using the preview to help you get an idea of how the finished picture will look.
-            </p>
+            <h4>This tool provides a mockup of what a completed commission may look like.</h4>
             <h3>Line art</h3>
             <label>Sketch</label>
             <input type="radio" name="line" onclick="updateLine(0)" checked>
@@ -135,6 +133,7 @@
     <section class="contentSection" id="calculator">
         <h1>Calculator</h1>
         <hr>
+        <h4>This tool provides an estimation of the commission pricing.</h4>
         <h3>Base Prices</h3>
         <label>Commission type</label>
         <select name="basePrice" id="basePrice">
@@ -179,13 +178,14 @@
     
 
     <!--Terms of Service-->
-    <!-- not used at the moment
     <section class="contentSection" id="terms">
         <h2>Terms of Service</h2>
         <hr>
-        <p>TBD</p>
+        <h4>Please read the following before contacting me about a commission.</h4>
+        <iframe src="tos.html" name="termsOfServiceBox" title="termsAndConditions" id="termsOfService">
+        </iframe>
     </section>
-    -->
+    
 
     <!--Contact-->
     <section class="contentSection" id="contact">

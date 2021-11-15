@@ -281,6 +281,20 @@ Calculator
 }
 
 /*
+Terms of Service
+*/
+#termsOfService {
+    width:100%;
+    height:400px;
+}
+
+@media screen and (max-width: 600px) {
+    #termsOfService {
+      height:550px;
+    }
+}
+
+/*
 Contact
 */
 #calculator {
